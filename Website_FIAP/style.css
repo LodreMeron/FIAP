@@ -1,0 +1,165 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #1a2c38;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #85c1e9;
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    background-color: #187abb;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+    
+}
+
+
+.hero h2 {
+    font-size: 4em;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+
+/* Botão de Saiba Mais*/
+/* Botao Prioncipal */
+.btn {
+    display: inline-block;
+    background-color: #27ae60;
+    color: #fff;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Botao quando passa o mouse */
+.btn:hover {
+    background-color: #229a54; 
+    transform: translateY(-4px); 
+}
+
+/* Clientes, Parceiros & Studios */
+.clients-partners, .tech-stack {
+    padding: 20px 0; 
+    text-align: center;
+    background-color: #ffffff; 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.clients-partners h3, .tech-stack h3 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Abaixo do título */
+.clients-partners h3::after, .tech-stack h3::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #3498db;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo-grid img {
+    max-width: 160px;
+    height: auto;
+    filter: grayscale(70%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    opacity: 0.7;
+}
+
+.logo-grid img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Softwares */
+.tech-stack .logo-grid img {
+    max-width: 100px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #1a2c38;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+}
